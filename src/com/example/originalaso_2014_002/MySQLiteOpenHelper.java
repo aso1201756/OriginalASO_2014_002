@@ -22,7 +22,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 				"Hitokoto ( _id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL , phrase TEXT)");
 
 	}
-
+	a
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion){
 		db.execSQL("drop table Hitokoto;");
