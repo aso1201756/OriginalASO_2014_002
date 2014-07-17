@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 
-	@Override
+	
 	public MySQLiteOpenHelper(Context context) {
 
 		super(context,"20140021201756.sqlite3", null,1);
@@ -30,10 +30,11 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 	}
 
 	public void insertHitokoto(SQLiteDatabase db, String inputMsg){
+		String sqlstr = " insert into Hitokoto (phrase) values(' "+ inputMsg + " ');";
 		try{
 			db.beginTransaction();
 			db.execSQL(sqlstr);
-			db.setTransectionSuccessful();
+			db.setTransactionSuccessful();
 		} catch (SQLException e) {
 			Log.e("ERROR", e.toString());
 
