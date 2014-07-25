@@ -9,10 +9,11 @@ import android.view.View;
 
 public class MainActivity extends Activity implements View.OnClickListener{
 
-	/**
-		 * @author student
-		 *
-		 */
+		SQLiteDatabase sdb = null;
+		MySQLiteOpenHelper helper = null;
+
+
+
 	public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 
 		/* (非 Javadoc)
