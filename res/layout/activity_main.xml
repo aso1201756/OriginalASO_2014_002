@@ -23,22 +23,22 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="27dp"
-            android:text="TextView" />
+            android:text="今日の一言" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txvHITOKOTO"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView1"
             android:layout_below="@+id/textView1"
             android:layout_marginTop="20dp"
-            android:text="TextView" />
+            android:text="ひとことを登録" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/edtMsg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
+            android:layout_below="@+id/txvHITOKOTO"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="55dp"
             android:ems="10" />
@@ -47,33 +47,36 @@
             android:id="@+id/linearLayout1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editText1"
-            android:layout_below="@+id/editText1"
+            android:layout_alignLeft="@+id/edtMsg"
+            android:layout_below="@+id/edtMsg"
             android:layout_marginTop="54dp"
-            android:orientation="vertical" >
+            android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/btnDELETE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="メンテ" />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button" />
         </LinearLayout>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnCHECK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/linearLayout1"
             android:layout_alignParentBottom="true"
-            android:layout_alignRight="@+id/editText1"
+            android:layout_alignRight="@+id/edtMsg"
             android:layout_marginBottom="27dp"
-            android:text="Button" />
+            android:text="ひとことチェック" />
+
+        <Button
+            android:id="@+id/btnMAINTE_BACK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/edtMsg"
+            android:layout_alignTop="@+id/linearLayout1"
+            android:text="登録" />
 
     </RelativeLayout>
 

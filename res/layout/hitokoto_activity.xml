@@ -17,22 +17,22 @@
         android:layout_alignParentTop="true" >
 
         <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txvHITOKOTO"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="121dp"
             android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/txvHITOKOTO"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/ic_launcher" />
 
     </RelativeLayout>
 
