@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 
-	
+
 	public MySQLiteOpenHelper(Context context) {
 
 		super(context,"20140021201756.sqlite3", null,1);
