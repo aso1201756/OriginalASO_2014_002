@@ -123,7 +123,7 @@ public class MaintenanceActivity extends Activity implements
 		int[] to =new int[]{android.R.id.text1};
 
 		SimpleCursorAdapter adapter =
-				new SimpleCusorAdapter(this.db_layout,cursor,from,to,0);
+				new SimpleCursorAdapter(this,db_layout,cursor,from,to,0);
 
 		lstHitokoto.setAdapter(adapter);
 	}

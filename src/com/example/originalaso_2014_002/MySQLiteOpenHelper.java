@@ -86,7 +86,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 		String sqlstr = "SELECT _id, phrase FROM Hitokoto ORDER BY _id;";
 
 		try{
-			cursor = (SQLiteCursordb)db.rawQuery(sqlstr, null);
+			cursor = (SQLiteCursor)db.rawQuery(sqlstr, null);
 			if(cursor.getCount()!=0);{
 				cursor.moveToFirst();
 			}
