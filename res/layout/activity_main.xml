@@ -47,9 +47,9 @@
             android:id="@+id/linearLayout1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/edtMsg"
             android:layout_below="@+id/edtMsg"
-            android:layout_marginTop="54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
             android:orientation="horizontal" >
 
             <Button
@@ -58,25 +58,21 @@
                 android:layout_height="wrap_content"
                 android:text="メンテ" />
 
+            <Button
+                android:id="@+id/btnENTRY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登録" />
         </LinearLayout>
 
         <Button
             android:id="@+id/btnCHECK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/linearLayout1"
             android:layout_alignParentBottom="true"
-            android:layout_alignRight="@+id/edtMsg"
-            android:layout_marginBottom="27dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
             android:text="ひとことチェック" />
-
-        <Button
-            android:id="@+id/btnENTRY"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/edtMsg"
-            android:layout_alignTop="@+id/linearLayout1"
-            android:text="登録" />
 
     </RelativeLayout>
 

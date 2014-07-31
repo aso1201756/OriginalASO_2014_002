@@ -8,6 +8,12 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 
+		/**
+		 * @param context
+		 * @param name
+		 * param factory
+		 * @param version
+		 */
 
 	public MySQLiteOpenHelper(Context context) {
 
@@ -18,8 +24,8 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		// TODO 自動生成されたメソッド・スタブ
-		db.execSQL("CREATE TABLE IF NOT EXISTS" +
-				"Hitokoto ( _id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL , phrase TEXT)");
+		db.execSQL("CREATE TABLE IF NOT EXISTS " +
+				"Hitokoto ( _id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL , phrase TEXT )");
 
 	}
 
@@ -30,7 +36,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 	}
 
 	public void insertHitokoto(SQLiteDatabase db, String inputMsg){
-		String sqlstr = " insert into Hitokoto (phrase) values(' "+ inputMsg + " ');";
+		String sqlstr = " insert into Hitokoto (phrase) values(' " + inputMsg + " ');";
 		try{
 			db.beginTransaction();
 			db.execSQL(sqlstr);
@@ -42,7 +48,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 			db.endTransaction();
 		}
 
-		return;
+	return;
 
 	}
 	public String selectRandomHitokoto(SQLiteDatabase db){
@@ -52,7 +58,7 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 		String sqlstr = "SELECT _id, phrase FROM Hitokoto ORDER BY RANDOM();";
 			try {
 				SQLiteCursor cursor= (SQLiteCursor)db.rawQuery(sqlstr, null);
-				if(cursor.getCount() !=0);{
+				if(cursor.getCount() !=0){
 					cursor.moveToFirst();
 					rtString = cursor.getString(1);
 				}
